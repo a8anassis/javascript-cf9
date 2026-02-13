@@ -14,5 +14,9 @@ const getIndexes = (array, value) => {
 console.log(getIndexes(arr, 3)); // Output: [2]
 
 
+// do it with reduce
+const getIndexesWithReduce = (array, value) => {
+    return array.reduce((indexes, element, index) => (element === value) ? [...indexes, index] : indexes, []);
+}
 
-
+console.log(getIndexesWithReduce(arr, 3)); // Output: [2]
