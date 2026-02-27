@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#btnDecr').addEventListener('click', () => onDecreasedClicked())
     document.querySelector('#btnReset').addEventListener('click', () => onResetClicked())
     document.querySelector('#btnIncr').addEventListener('click', () => onIncreasedClicked())
+    render()
 })
 
 // Controllers
